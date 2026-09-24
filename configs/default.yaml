@@ -1,0 +1,30 @@
+seed: 1234
+
+model:
+  name: GSAI-ML/iLLaDA-8B-Base
+  mask_id: null
+  dtype: bfloat16
+  trust_remote_code: true
+
+decoding:
+  steps: 64
+  max_new_tokens: 256
+  temperature: 0.0
+  candidate_k: 16
+  top_k_edges: 4
+  repair_budget: 4
+  structural_threshold: 0.25
+  repair_every: 4
+  min_revision_step: 0.20
+  max_revision_step: 0.80
+
+counterfactual:
+  metric: js
+  batch_size: 8
+  local_radius: 32
+  use_logits: true
+
+benchmark:
+  batch_size: 1
+  limit: null
+  seed: 1234

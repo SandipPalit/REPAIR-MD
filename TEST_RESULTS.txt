@@ -1,0 +1,16 @@
+SYNAPSE-CUT conference-ready validation
+=======================================
+
+Local unit/integration tests: 15 passed
+Command: pytest -q
+
+Additional smoke checks executed:
+- run_adversarial_bench.py
+- run_theory_diagnostics.py --trials 2
+- run_scaling.py --lengths 32,64 --trials 2
+- run_synthetic_robustness.py --trials 2 --seeds 1 --corruption .1,.2 --noise 0,.1 --budgets 1,2 --candidate-k 2,all
+- run_benchmark.py --benchmark ParallelBench ... (command recording only)
+
+No real LLaDA/iLLaDA, ParallelBench, DAPD, CoRe, DEMASK, DOS or Fast-dLLM++
+results are included or fabricated. Real model experiments require the user's
+GPU/model environment and, for external methods, their official implementations.

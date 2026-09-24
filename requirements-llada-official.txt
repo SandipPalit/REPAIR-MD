@@ -1,0 +1,8 @@
+# Upstream LLaDA documentation has historically pinned a specific Transformers
+# version for its reference code. Keep this file separate from the research stack
+# so the exact upstream environment can be reproduced when needed.
+transformers==4.38.2
+accelerate>=0.27
+sentencepiece>=0.1.99
+torch>=2.1
+numpy>=1.24,<3

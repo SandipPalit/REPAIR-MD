@@ -1,0 +1,27 @@
+name: synapse-cut
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - scikit-learn
+  - networkx
+  - matplotlib
+  - seaborn
+  - pytest
+  - pyyaml
+  - pip:
+      - torch
+      - transformers
+      - accelerate
+      - datasets
+      - tqdm
+      - psutil
+      - sacrebleu
+      - evaluate
+      - lm-eval

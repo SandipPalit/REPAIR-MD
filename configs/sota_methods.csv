@@ -1,0 +1,6 @@
+method,command,official_repo,notes
+DAPD,"python external/DAPD/run.py",https://github.com/quasar529/DAPD,"Replace with exact official command/checkpoint; report implementation commit."
+CoRe,"python external/CoRe/run.py",https://github.com/UCF-CRCV/CoRe,"Replace with exact official command/checkpoint; report implementation commit."
+DOS,"python external/DOS/run.py",,"Install official implementation and preserve exact sampler semantics."
+CLAD,"python external/CLAD/run.py",,"Install official implementation and preserve exact sampler semantics."
+Fast-dLLM++,"python external/Fast-dLLM-plus-plus/run.py",https://github.com/rand/fast-dllm,"Use compatible release/checkpoint and report implementation commit."

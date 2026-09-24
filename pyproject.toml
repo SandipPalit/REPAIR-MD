@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "synapse-cut"
+version = "0.1.0"
+description = "Research implementation of SYNAPSE-CUT for masked diffusion language model decoding"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy",
+  "scipy",
+  "pandas",
+  "networkx",
+  "tqdm",
+  "pyyaml",
+  "psutil",
+  "torch>=2.1",
+  "transformers>=4.46,<5",
+  "accelerate>=0.30"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+include = ["synapse_cut*"]
